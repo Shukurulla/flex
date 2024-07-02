@@ -1,0 +1,210 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+body a {
+  text-decoration: none;
+}
+/* Header Section Style */
+
+/* Navbar Style Start */
+header nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 90%;
+  margin: auto;
+  padding: 20px 0;
+}
+header nav .navigation ul {
+  display: flex;
+  gap: 50px;
+}
+header nav .navigation ul li {
+  list-style: none;
+}
+header nav .navigation ul li a {
+  color: #556987;
+  transition: 0.3s;
+}
+header nav .navigation ul li a.active {
+  font-weight: 500;
+  color: #22c55e;
+}
+header nav .navigation ul li a:hover {
+  color: #22c55e;
+}
+
+header nav .auth {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+header nav .auth a:first-child {
+  color: #556987;
+}
+/* Navbar Style End */
+
+/* Hero Style Start */
+main {
+  padding-top: 20px;
+}
+
+main .main-wrapper {
+  background-color: #2a3342;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  padding: 80px 0;
+  border-radius: 25px;
+  overflow: hidden;
+}
+main .main-wrapper .main-info {
+  width: 70%;
+  margin: auto;
+}
+main .main-wrapper .details img {
+  position: absolute;
+  z-index: 1;
+}
+main .main-wrapper .details img:nth-child(1) {
+  top: 0;
+  left: 0;
+}
+main .main-wrapper .details img:nth-child(2) {
+  top: 25px;
+  right: 25px;
+}
+main .main-wrapper .details img:nth-child(3) {
+  left: 25px;
+  bottom: 25px;
+}
+main .main-wrapper .details img:nth-child(4) {
+  right: 0;
+  bottom: 0px;
+}
+main .main-wrapper .main-info {
+  position: relative;
+  z-index: 2;
+}
+main .main-wrapper .main-info .main-label {
+  background-color: #22c55e;
+  color: #fff;
+  padding: 2px 8px;
+  border-radius: 45pc;
+  display: inline;
+  font-size: 12px;
+}
+main .main-wrapper .main-info .title h1 {
+  color: #ffff;
+  font-weight: 700;
+  font-size: 50px;
+  line-height: 60px;
+  padding: 0;
+  margin: 25px 0;
+}
+main .main-wrapper .main-info .title p {
+  font-size: 20px;
+  color: #8896ab;
+}
+main .main-wrapper .main-info .main-contact {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+}
+main .main-wrapper .main-info .main-contact .contact-input {
+  display: flex;
+  background-color: #fff;
+  border: 1px solid #d5dae1;
+  padding: 8px 14px;
+  align-items: center;
+  width: 35%;
+  gap: 10px;
+  border-radius: 8px;
+}
+main .main-wrapper .main-info .main-contact .contact-input input {
+  border: none;
+  outline: none;
+  width: 90%;
+  color: #667085;
+  font-size: 16px;
+}
+main .main-wrapper .main-info .main-contact .contact-input input::placeholder {
+  color: #667085;
+  letter-spacing: 1px;
+}
+main .main-wrapper .main-info .main-contact .contact-input img {
+  display: flex;
+  align-items: center;
+}
+main .main-wrapper .main-info small {
+  color: #8896ab;
+  margin-top: 20px;
+  display: block;
+}
+
+main .supports {
+  padding: 70px 0;
+  background-image: url(../public/details/pattern-light.png);
+}
+main .supports p {
+  color: #bbc3cf;
+}
+main .supports .support-companies {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+/* Hero Style End */
+
+/* Features Style Start */
+#features {
+  padding: 90px 0;
+}
+#features .section-about h1 {
+  color: #2a3342;
+  font-size: 36px;
+  line-height: 44px;
+}
+#features .section-about p {
+  color: #556987;
+  font-size: 20px;
+}
+#features .services {
+  display: grid;
+  grid-template-columns: repeat(3, 31%);
+  justify-content: space-between;
+  gap: 20px;
+  padding: 40px 0;
+}
+#features .services .col {
+  cursor: pointer;
+}
+#features .services .service-icon {
+  width: 64px;
+  height: 64px;
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  background-color: #22c55e;
+}
+#features .services .service-info h1 {
+  color: #2a3342;
+  font-size: 24px;
+}
+#features .services .service-info p {
+  color: #556987;
+}
+/* Features Style End */
